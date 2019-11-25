@@ -22,6 +22,6 @@ def self.ratings_sum
 end 
 
 def self.popular_shows
-    Show.where("rating = ?", self.lowest_rating)[0]
+    Song.where("rating > ?", 5)[]
 end
 
