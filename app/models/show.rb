@@ -10,7 +10,7 @@ def self.most_popular_show
 end
   
 def self.lowest_rating
-  Song.minimum(:rating)
+  Show.minimum(:rating)
 end
 
 def self.least_popular_show
@@ -22,6 +22,9 @@ def self.ratings_sum
 end 
 
 def self.popular_shows
-    Song.where("rating > ?", 5)[]
+    Show.where("rating > ?", 5)[]
 end
 
+def shows_by_alphabetical_order
+  Show.order(:name)[]
+end  
