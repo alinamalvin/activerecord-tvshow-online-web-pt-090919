@@ -17,6 +17,7 @@ def self.least_popular_show
     Show.where("rating = ?", self.lowest_rating)[0]
 end
 
-def
- <class name>.sum(:<column_name>)
+def self.ratings_sum
+ <Show>.sum(:<rating>)
 end 
+
