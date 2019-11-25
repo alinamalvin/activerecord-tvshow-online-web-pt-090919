@@ -2,7 +2,7 @@ class Show < ActiveRecord::Base
 end
 
 def self.highest_rating
-  Song.maximum(:rating)
+  Show.maximum(:rating)
 end
 
 def self.most_popular_show
